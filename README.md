@@ -32,3 +32,9 @@ git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
 ```shell
 nvim
 ```
+
+#### What I added
+
+- Updated the relativenumber to `false` in the astrocore
+- Updated the file extensions for formatting on save in the astrolsp
+- Added few custom lua files start with `z0` in the `lua/plugins`
