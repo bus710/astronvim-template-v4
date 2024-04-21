@@ -3,7 +3,9 @@ return {
   -- https://elixirforum.com/t/getting-heex-and-h-working-in-nvim-with-astronvim/54779/16
   -- https://github.com/treshenry/astronvim_config/blob/main/init.lua
 
- --[[ 
+  --[[ 
+  --]]
+
   vim.api.nvim_create_autocmd("LspAttach", {
     group = vim.api.nvim_create_augroup("UserLspConfig", {}),
     callback = function(ev)
@@ -37,7 +39,6 @@ return {
       -- })
     end,
   }),
---]]
 
 }
 
