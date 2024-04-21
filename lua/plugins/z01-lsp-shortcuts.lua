@@ -1,3 +1,5 @@
+if true then return {} end
+
 return {
   -- The entire config came from:
   -- https://elixirforum.com/t/getting-heex-and-h-working-in-nvim-with-astronvim/54779/16
@@ -39,7 +41,6 @@ return {
       -- })
     end,
   }),
-
 }
 
 --   local lspconfig = require "lspconfig"
