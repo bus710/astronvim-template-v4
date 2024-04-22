@@ -2,6 +2,11 @@
 Prerequisites:
 - sudo apt install lldb
 - rustup component add rust-analyzer
+
+If the dap-ui doesn't start well, check the LSP log
+- :LspInfo
+- :LspLog
+- :lua vim.lsp.buf.definition() on a token
 ]]--
 
 return {
