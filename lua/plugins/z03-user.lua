@@ -43,5 +43,6 @@ return {
   --
   { "mxsdev/nvim-dap-vscode-js", requires = {"mfussenegger/nvim-dap"}},
   --
-  { "akinsho/flutter-tools.nvim" }
+  { "akinsho/flutter-tools.nvim" },
+  { "WhoIsSethDaniel/mason-tool-installer.nvim" }
 }
