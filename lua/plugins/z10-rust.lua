@@ -1,7 +1,7 @@
 --[[ 
 Prerequisites:
 - sudo apt install lldb
-- rustup add component rust-analyzer
+- rustup component add rust-analyzer
 ]]--
 
 return {
