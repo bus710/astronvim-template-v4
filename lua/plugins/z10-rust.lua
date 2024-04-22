@@ -1,12 +1,17 @@
+--[[ 
+Prerequisites:
+- sudo apt install lldb
+- rustup add component rust-analyzer
+]]--
+
 return {
-  -- sudo apt install lldb (for the command)
-  -- 
-  -- To start debugging, type ":RustDebuggables"
-  { "simrat39/rust-tools.nvim" },
-  -- {
-  --   'mrcjkb/rustaceanvim',
-  --   version = '^4', -- Recommended
-  --   ft = { 'rust' },
-  -- },
+  -- To launch the debugger
+  -- :RustLsp debuggables
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^4',
+    lazy = false,
+    options = {}
+  },
   { "Saecki/crates.nvim"},
 }
