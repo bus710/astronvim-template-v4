@@ -15,7 +15,8 @@ return {
         opt = {
           tabstop = 4,
           softtabstop = 4,
-          colorcolumn = '80,120'
+          -- colorcolumn = '80,120'
+          colorcolumn = '120'
         },
       },
     },
