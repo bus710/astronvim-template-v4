@@ -27,7 +27,9 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
-  { import = "astrocommunity.git.diffview-nvim"}
+  { import = "astrocommunity.git.diffview-nvim"},
+  --
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.terraform" },
 }
