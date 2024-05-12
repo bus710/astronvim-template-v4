@@ -1,3 +1,5 @@
+-- This file is here as an example
+
 if true then return {} end
 
 return {
