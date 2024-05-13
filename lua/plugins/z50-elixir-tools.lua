@@ -1,3 +1,5 @@
+-- This function will run when open an elixir file.
+
 return {
   {
     "elixir-tools/elixir-tools.nvim",
