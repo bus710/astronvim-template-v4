@@ -18,6 +18,8 @@ return {
   -- { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.bash" },
   --
+  { import = "astrocommunity.pack.elixir-phoenix" },
+  --
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.tailwindcss" },
