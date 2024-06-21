@@ -1,10 +1,11 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
 --       as this provides autocomplete and documentation while editing
 
+local lspconfig = require("lspconfig")
 ---@type LazySpec
 return {
   "AstroNvim/astrolsp",
@@ -51,6 +52,39 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      html = {
+        cmd = { "vscode-html-language-server", "--stdio" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "svelte" },
+      },
+      tailwindcss = {
+        root_dir = lspconfig.util.root_pattern(
+          "tailwind.config.js",
+          "tailwind.config.ts",
+          "postcss.config.js",
+          "postcss.config.ts",
+          "package.json",
+          "node_modules",
+          ".git",
+          "mix.exs"
+        ),
+        filetypes = { "html", "elixir", "eelixir", "heex", "svelte" },
+        init_options = {
+          userLanguages = {
+            elixir = "html-eex",
+            eelixir = "html-eex",
+            heex = "html-eex",
+          },
+        },
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                'class[:]\\s*"([^"]*)"',
+              },
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
