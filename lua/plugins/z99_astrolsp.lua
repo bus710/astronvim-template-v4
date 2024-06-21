@@ -54,20 +54,30 @@ return {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
       html = {
         cmd = { "vscode-html-language-server", "--stdio" },
-        filetypes = { "html", "elixir", "eelixir", "heex", "svelte" },
-      },
-      tailwindcss = {
         root_dir = lspconfig.util.root_pattern(
+          "mix.exs",
           "tailwind.config.js",
           "tailwind.config.ts",
           "postcss.config.js",
           "postcss.config.ts",
           "package.json",
           "node_modules",
-          ".git",
-          "mix.exs"
+          ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "svelte" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "svelte", "ex" },
+      },
+      tailwindcss = {
+        root_dir = lspconfig.util.root_pattern(
+          "mix.exs",
+          "tailwind.config.js",
+          "tailwind.config.ts",
+          "postcss.config.js",
+          "postcss.config.ts",
+          "package.json",
+          "node_modules",
+          ".git"
+        ),
+        filetypes = { "html", "elixir", "eelixir", "heex", "svelte", "ex" },
         init_options = {
           userLanguages = {
             elixir = "html-eex",
