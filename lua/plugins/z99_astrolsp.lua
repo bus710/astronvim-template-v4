@@ -107,6 +107,7 @@ return {
           "elixir",
           "eelixir",
           "heex",
+          "ex",
         },
       }
     },
