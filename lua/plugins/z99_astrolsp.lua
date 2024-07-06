@@ -45,7 +45,10 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
-      -- "exlixir_ls"
+      -- "exlixir",
+      "tailwindcss",
+      "html",
+      "emmet_ls"
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -93,6 +96,13 @@ return {
             },
           },
         },
+        -- capabilities = {
+        --   workspace = {
+        --     didChangeWatchedFiles = {
+        --       dynamicRegistration = true,
+        --     },
+        --   },
+        -- },
       },
       emmet_ls = {
         filetypes = {
