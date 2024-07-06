@@ -22,11 +22,7 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          "go",
-          "rs",
-          "ex",
-          "svelte",
-          "heex",
+          -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -44,7 +40,6 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
-      -- "exlixir_ls"
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
