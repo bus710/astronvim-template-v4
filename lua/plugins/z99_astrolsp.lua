@@ -1,10 +1,11 @@
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
 --       as this provides autocomplete and documentation while editing
 
-local lspconfig = require("lspconfig")
+local lspconfig = require "lspconfig"
 ---@type LazySpec
 return {
   "AstroNvim/astrolsp",
@@ -48,7 +49,7 @@ return {
       -- "exlixir",
       "tailwindcss",
       "html",
-      "emmet_ls"
+      "emmet_ls",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -118,7 +119,7 @@ return {
           "heex",
           "ex",
         },
-      }
+      },
     },
     -- customize how language servers are attached
     handlers = {
