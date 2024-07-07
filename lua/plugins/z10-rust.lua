@@ -3,6 +3,9 @@ Prerequisites:
 - sudo apt install lldb
 - rustup component add rust-analyzer
 
+To start the dap-ui:
+- :RustLsp debuggables
+
 If the dap-ui doesn't start well, check the LSP log
 - :LspInfo
 - :LspLog
