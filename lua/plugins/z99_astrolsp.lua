@@ -67,7 +67,7 @@ return {
           "node_modules",
           ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "svelte", "ex" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte"  },
       },
       tailwindcss = {
         root_dir = lspconfig.util.root_pattern(
@@ -80,7 +80,7 @@ return {
           "node_modules",
           ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "svelte", "ex" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte" },
         init_options = {
           userLanguages = {
             elixir = "html-eex",
@@ -118,6 +118,7 @@ return {
           "eelixir",
           "heex",
           "ex",
+          "svelte"
         },
       },
     },
