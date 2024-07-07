@@ -16,7 +16,7 @@ return {
           enable = true,
           -- https://github.com/elixir-tools/elixir-tools.nvim/issues/143
           -- ls ~/.cache/nvim/elixir-tools.nvim/installs/elixir-lsp/elixir-ls/
-          tag = "v0.15.1",
+          -- tag = "v0.15.1",
           settings = elixirls.settings {
             dialyzerEnabled = false,
             enableTestLenses = false,
