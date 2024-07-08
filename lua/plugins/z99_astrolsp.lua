@@ -28,8 +28,8 @@ return {
           "go",
           "rs",
           "ex",
-          "svelte",
           "heex",
+          "svelte",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",

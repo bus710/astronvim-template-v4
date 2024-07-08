@@ -16,7 +16,7 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.bash" },
   --
-  { import = "astrocommunity.pack.elixir-phoenix" },
+  -- { import = "astrocommunity.pack.elixir-phoenix" },
   --
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.typescript" },
