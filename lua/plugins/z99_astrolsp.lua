@@ -6,6 +6,7 @@
 --       as this provides autocomplete and documentation while editing
 
 local lspconfig = require "lspconfig"
+
 ---@type LazySpec
 return {
   "AstroNvim/astrolsp",
@@ -47,14 +48,16 @@ return {
     servers = {
       -- "pyright"
       -- "exlixir",
-      "tailwindcss",
-      "html",
-      "emmet_ls",
+      -- "tailwindcss",
+      -- "html",
+      -- "emmet_ls",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      --
+      --
       html = {
         cmd = { "vscode-html-language-server", "--stdio" },
         root_dir = lspconfig.util.root_pattern(
@@ -69,7 +72,10 @@ return {
         ),
         filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte"  },
       },
+      --
+      --
       tailwindcss = {
+        cmd = { "tailwindcss-language-server", "--stdio" },
         root_dir = lspconfig.util.root_pattern(
           "mix.exs",
           "tailwind.config.js",
@@ -97,14 +103,9 @@ return {
             },
           },
         },
-        -- capabilities = {
-        --   workspace = {
-        --     didChangeWatchedFiles = {
-        --       dynamicRegistration = true,
-        --     },
-        --   },
-        -- },
       },
+      --
+      --
       emmet_ls = {
         filetypes = {
           "html",
