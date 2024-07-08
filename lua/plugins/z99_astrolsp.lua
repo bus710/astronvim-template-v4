@@ -87,15 +87,29 @@ return {
           ".git"
         ),
         filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte" },
-        init_options = {
-          userLanguages = {
-            elixir = "html-eex",
-            eelixir = "html-eex",
-            heex = "html-eex",
-          },
-        },
+        -- Instead of having the init_options.includeLanguages/userLanguages, 
+        -- add the includeLanguages under the settings.tailwindCSS.includeLanguages as the issue below suggests
+        -- https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1002
+        -- init_options = {
+          -- includeLanguages = {
+          --   elixir = "html-eex",
+          --   eelixir = "html-eex",
+          --   heex = "html-eex",
+          -- },
+          -- x
+          -- userLanguages = {
+          --   elixir = "html-eex",
+          --   eelixir = "html-eex",
+          --   heex = "html-eex",
+          -- },
+        -- },
         settings = {
           tailwindCSS = {
+            includeLanguages = {
+              elixir = "html-eex",
+              eelixir = "html-eex",
+              heex = "html-eex",
+            },
             experimental = {
               classRegex = {
                 'class[:]\\s*"([^"]*)"',
