@@ -18,8 +18,10 @@ If Mason keeps failing codelldb, delete the lock file with
 
 
 return {
+  -- If RustAnalyzer crashes
+  --   rustup component add rust-analyzer
   -- To launch the debugger
-  -- :RustLsp debuggables
+  --   :RustLsp debuggables
   {
     'mrcjkb/rustaceanvim',
     version = '^4',
