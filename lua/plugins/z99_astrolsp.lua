@@ -5,7 +5,9 @@
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
 --       as this provides autocomplete and documentation while editing
 
+
 local lspconfig = require "lspconfig"
+
 
 ---@type LazySpec
 return {
@@ -145,6 +147,7 @@ return {
       -- the key is the server that is being setup with `lspconfig`
       -- rust_analyzer = false, -- setting a handler to false will disable the set up of that language server
       -- pyright = function(_, opts) require("lspconfig").pyright.setup(opts) end -- or a custom handler function can be passed
+      zls = function(_, _) lspconfig.zls.setup{} end
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
