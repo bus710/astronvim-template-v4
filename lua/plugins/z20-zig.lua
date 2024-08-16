@@ -6,7 +6,7 @@ return {
     "mfussenegger/nvim-dap",
 
     config = function()
-      local dap, dapui = require "dap", require "dapui"
+      local dap = require "dap"
 
       -- sudo apt install lldb (for the command)
       dap.adapters.lldb = {
@@ -36,6 +36,7 @@ return {
         }
       }
 
+      local dapui = require "dapui"
       dap.listeners.after.event_initialized["dapui_config"] = function()
         dapui.open({})
       end
