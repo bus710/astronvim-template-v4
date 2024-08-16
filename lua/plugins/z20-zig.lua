@@ -1,4 +1,5 @@
 -- https://terminalprogrammer.com/neovim-setup-for-zig
+-- :lua print(vim.fn.getcwd())
 
 return {
   "mfussenegger/nvim-dap",
@@ -9,7 +10,7 @@ return {
     -- sudo apt install lldb (for the command)
     dap.adapters.lldb = {
       type = 'executable',
-      command = '/usr/bin/lldb-vscode-16',
+      command = '/usr/bin/lldb-vscode',
       name = 'lldb'
     }
     dap.configurations.zig = {
@@ -18,6 +19,8 @@ return {
         type = 'lldb',
         request = 'launch',
         program = '${workspaceFolder}/zig-out/bin/${workspaceFolderBasename}',
+        -- program = "${file}";
+        -- program = vim.fn.getcwd() .. '/zig-out/bin/${workspaceFolderBasename}',
         cwd = '${workspaceFolder}',
         stopOnEntry = false,
         args = {},
