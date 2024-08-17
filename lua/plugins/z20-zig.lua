@@ -62,7 +62,8 @@ return {
           type = 'lldb',
           request = 'launch',
           -- program = '${workspaceFolder}/zig-out/bin/${workspaceFolderBasename}',
-          program = "${command:pickFile}";
+          program = './zig-out/bin/${workspaceFolderBasename}',
+          -- program = "${command:pickFile}";
           -- program = vim.fn.getcwd() .. '/zig-out/bin/${workspaceFolderBasename}',
           -- program = function()
           --   return vim.fn.input({
@@ -75,6 +76,7 @@ return {
           cwd = '${workspaceFolder}',
           stopOnEntry = false,
           args = {},
+          runInTerminal = false,
         }
       }
 
