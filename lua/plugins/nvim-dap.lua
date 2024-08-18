@@ -21,7 +21,10 @@ return {
           name = "Launch",
           type = "lldb",
           request = "launch",
-          program = "${workspaceFolder}/zig-out/bin/${workspaceFolderBasename}",
+          -- program = "${workspaceFolder}/zig-out/bin/${workspaceFolderBasename}",
+          program = function()
+            return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/zig-out/bin/', 'file')
+          end,
           cwd = "${workspaceFolder}",
           stopOnEntry = false,
           args = {},
