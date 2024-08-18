@@ -1,3 +1,4 @@
+-- https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#ccrust-via-lldb-vscode
 -- https://terminalprogrammer.com/neovim-setup-for-zig
 -- :lua print(vim.fn.getcwd())
 
@@ -6,7 +7,6 @@
 return {
   {
     "mfussenegger/nvim-dap",
-
     config = function()
       local dap = require "dap"
 
@@ -22,25 +22,23 @@ return {
           type = 'lldb',
           request = 'launch',
           program = '${workspaceFolder}/zig-out/bin/${workspaceFolderBasename}',
-          -- program = './zig-out/bin/${workspaceFolderBasename}',
-          -- program = "${command:pickFile}";
-          -- program = vim.fn.getcwd() .. '/zig-out/bin/${workspaceFolderBasename}',
-          -- program = function()
-          --   return vim.fn.input({
-          --     prompt = 'Path to executable for zig: ',
-          --     -- default = vim.fn.getcwd() .. '/',
-          --     defailt = '${workspaceFolder}/zig-out/bin/${workspaceFolderBasename}',
-          --     completion = 'file',
-          --   })
-          -- end,
           cwd = '${workspaceFolder}',
           stopOnEntry = false,
           args = {},
           runInTerminal = false,
         }
       }
+    end,
+  },
+  {
+    'rcarriga/nvim-dap-ui',
+    config = function(plugin, opts)
+      -- run default AstroNvim nvim-dap-ui configuration function
+      require("astronvim.plugins.configs.nvim-dap-ui")(plugin, opts)
 
       local dapui = require "dapui"
+      local dap = require "dap"
+
       dap.listeners.after.event_initialized["dapui_config"] = function()
         dapui.open({})
       end
@@ -50,6 +48,6 @@ return {
       dap.listeners.before.event_exited["dapui_config"] = function()
         dapui.close({})
       end
-    end,
+    end
   },
 }

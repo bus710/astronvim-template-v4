@@ -8,6 +8,7 @@ return {
     cmd = "Flog"
   },
   --
+  { "folke/lazydev.nvim"},
   { "nvim-lua/plenary.nvim" }, -- Lua function helpers
   { "mfussenegger/nvim-dap" }, -- Debug adapter protocol
   --
