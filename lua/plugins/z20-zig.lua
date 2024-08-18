@@ -6,7 +6,7 @@
 
 return {
   {
-    "mfussenegger/nvim-dap",
+    -- "mfussenegger/nvim-dap",
     config = function()
       local dap = require "dap"
 
@@ -31,7 +31,7 @@ return {
     end,
   },
   {
-    'rcarriga/nvim-dap-ui',
+    -- 'rcarriga/nvim-dap-ui',
     config = function(plugin, opts)
       -- run default AstroNvim nvim-dap-ui configuration function
       require("astronvim.plugins.configs.nvim-dap-ui")(plugin, opts)
