@@ -8,9 +8,8 @@ return {
     cmd = "Flog"
   },
   --
-  { "folke/lazydev.nvim"},
-  { "nvim-lua/plenary.nvim" }, -- Lua function helpers
   { "mfussenegger/nvim-dap" }, -- Debug adapter protocol
+  { "WhoIsSethDaniel/mason-tool-installer.nvim" },
   --
   { "othree/html5.vim" },
   { "pangloss/vim-javascript" },
@@ -33,7 +32,6 @@ return {
   { "mxsdev/nvim-dap-vscode-js", requires = {"mfussenegger/nvim-dap"}},
   --
   { "akinsho/flutter-tools.nvim" },
-  { "WhoIsSethDaniel/mason-tool-installer.nvim" },
   --
   { "juliosueiras/vim-terraform-completion" }
 }
