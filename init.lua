@@ -17,3 +17,5 @@ end
 
 require "lazy_setup"
 require "polish"
+
+-- vim.opt.rtp:prepend("~/repo/newnew.nvim")
