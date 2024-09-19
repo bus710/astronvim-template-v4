@@ -4,30 +4,33 @@
 
 
 
-
+-- https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#elixir
+-- https://github.com/elixir-lsp/elixir-ls?tab=readme-ov-file#debug-adapter-configuration-options
+-- https://github.com/tjdevries/config.nvim/blob/master/lua/custom/plugins/dap.lua
 
 local dap = require "dap"
-local elixir_ls_debugger = vim.fn.exepath "elixir-ls-debugger"
+local dapui = require "dapui"
+local adapter_path = "/home/bus710/.elixir-ls/scripts/debug_adapter.sh"
 
-if elixir_ls_debugger ~= "" then
-  dap.adapters.mix_task = {
-    type = "executable",
-    command = elixir_ls_debugger,
-  }
+dap.adapters.mix_task = {
+  type = "executable",
+  command = adapter_path,
+}
+dap.configurations.elixir = {
+  {
+    type = "mix_task",
+    name = "mix run",
+    task = "run",
+    request = "launch",
+    projectDir = "${workspaceFolder}",
+    exitAfterTaskReturns = false,
+    debugAutoInterpretAllModules = false,
+  },
+}
 
-  dap.configurations.elixir = {
-    {
-      type = "mix_task",
-      name = "phoenix server",
-      task = "phx.server",
-      request = "launch",
-      projectDir = "${workspaceFolder}",
-      exitAfterTaskReturns = false,
-      debugAutoInterpretAllModules = false,
-    },
-  }
-end
-
+dap.listeners.after.event_initialized["dapui_config"] = function() dapui.open {} end
+dap.listeners.before.event_terminated["dapui_config"] = function() dapui.close {} end
+dap.listeners.before.event_exited["dapui_config"] = function() dapui.close {} end
 
 return {
   {

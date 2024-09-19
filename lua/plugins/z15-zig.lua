@@ -8,6 +8,7 @@
 local dap = require "dap"
 local dapui = require "dapui"
 
+-- To get the binary file name, which should be same as the project root directory
 function getcwdtail()
   return vim.fn.fnamemodify(vim.fn.getcwd(), ':t')
 end
