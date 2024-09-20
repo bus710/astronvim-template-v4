@@ -10,7 +10,7 @@
 
 local dap = require "dap"
 local dapui = require "dapui"
-local adapter_path = "/home/bus710/.elixir-ls/scripts/debug_adapter.sh"
+local adapter_path = "/home/bus710/.elixir-ls/debug_adapter.sh"
 
 dap.adapters.mix_task = {
   type = "executable",
