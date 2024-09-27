@@ -23,6 +23,7 @@ local adapter_path = "/home/bus710/.elixir-ls/debug_adapter.sh"
 dap.adapters.mix_task = {
   type = "executable",
   command = adapter_path,
+  args = {}
 }
 dap.configurations.elixir = {
   {
@@ -31,8 +32,14 @@ dap.configurations.elixir = {
     task = "run",
     request = "launch",
     projectDir = "${workspaceFolder}",
-    exitAfterTaskReturns = false,
-    debugAutoInterpretAllModules = false,
+    -- requireFiles = {
+    --   "test/**/test_helper.exs",
+    --   "test/**/*_test.exs"
+    -- }
+    -- taskArgs = {"--trace"},
+    -- startApps = true, -- for Phoenix projects
+    -- exitAfterTaskReturns = false,
+    -- debugAutoInterpretAllModules = false,
   },
 }
 
