@@ -16,6 +16,8 @@
 -- :LspInstall elixirls
 --]
 
+-- For each project, create the .vscode/launch.json file 
+
 local dap = require "dap"
 local dapui = require "dapui"
 local adapter_path = "/home/bus710/.elixir-ls/debug_adapter.sh"
