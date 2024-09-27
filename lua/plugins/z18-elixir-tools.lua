@@ -8,6 +8,14 @@
 -- https://github.com/elixir-lsp/elixir-ls?tab=readme-ov-file#debug-adapter-configuration-options
 -- https://github.com/tjdevries/config.nvim/blob/master/lua/custom/plugins/dap.lua
 
+--[
+-- Also don't forget to install LSP and TS packages:
+-- :TSInstall! elixir
+-- :TSInstall! heex
+-- :TSInstall! eex
+-- :LspInstall elixirls
+--]
+
 local dap = require "dap"
 local dapui = require "dapui"
 local adapter_path = "/home/bus710/.elixir-ls/debug_adapter.sh"
