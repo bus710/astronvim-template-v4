@@ -9,7 +9,8 @@
 -- https://github.com/tjdevries/config.nvim/blob/master/lua/custom/plugins/dap.lua
 
 --[
--- Also don't forget to install LSP and TS packages:
+-- Also don't forget to install LSP and TS packages 
+--   (if don't, the "slow LSP response" error will appear):
 -- :TSInstall! elixir
 -- :TSInstall! heex
 -- :TSInstall! eex
