@@ -1,0 +1,43 @@
+{
+    "setup":{
+        "prefix": ["liveview", "lv"],
+        "description": "Basic Phoenix Liveview snippet",
+        "body":[
+            "defmodule ${PROJECT_NAME}Web.Main do",
+            "  @moduledoc false",
+            "  use ${PROJECT_NAME}Web, :live_view",
+            "",
+            "  def mount(_params, _session, socket) do",
+            "    socket = assign(socket, :pagename, \"main\")",
+            "    socket = assign(socket, :count, 0)",
+            "",
+            "    {:ok, socket}",
+            "  end",
+            "",
+            "  def render(assigns) do",
+            "    ~H\"\"\"",
+            "    <div class=\"bg-gray-50 p-10\">",
+            "      <p class=\"text-2xl\"><%= @pagename %> </p>",
+            "      <br/>",
+            "",
+            "      <p class=\"text-md p-2\">",
+            "        <%= @count %>",
+            "      </p>",
+            "      <button",
+            "        class=\"btn btn-primary drop-shadow-md\"",
+            "        phx-click=\"test\">",
+            "        Test",
+            "      </button>",
+            "    </div>",
+            "    \"\"\"",
+            "  end",
+            "",
+            "  def handle_event(\"test\", _, socket) do",
+            "    IO.inspect(socket)",
+            "    count = socket.assigns.count + 1",
+            "    {:noreply, assign(socket, :count, count)}",
+            "  end",
+            "end"
+        ]
+    }
+}
