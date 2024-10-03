@@ -1,0 +1,25 @@
+{
+    "setup":{
+        "prefix": ["phx-controller", "phx-ctrl"],
+        "description": "Basic Phoenix Controller snippet",
+        "body":[
+            "# Reference: https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html",
+            "#",
+            "# Add the below block in the route.ex.",
+            "# scope \"/api\", {${PROJECT_NAME}}Web do",
+	        "#   pipe_through :api",
+	        "#   get \"/test\", TestController, :show",
+            "# end",
+            "",
+            "defmodule {${PROJECT_NAME}}Web.TestController do",
+	        "  use Phoenix.Controller, formats: [:json]",
+	        "  alias {${PROJECT_NAME}}.{${MODULE_NAME}}",
+	        "",
+	        "  def show(conn, _params) do",
+		    "    quote = %{quote: Quotes.get_random_quote()}",
+		    "    render(conn, :show, quote)",
+	        "  end",
+            "end"
+        ]
+    }
+}

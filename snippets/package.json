@@ -7,7 +7,11 @@
         "snippets": [
             {
                 "language": "elixir",
-                "path": "./liveview.json"
+                "path": "./phx-liveview.json"
+            },
+            {
+                "language": "elixir",
+                "path": "./phx-controller.json"
             }
         ]
     }
