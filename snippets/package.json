@@ -12,6 +12,10 @@
             {
                 "language": "elixir",
                 "path": "./phx-controller.json"
+            },
+            {
+                "language": "elixir",
+                "path": "./phx-json.json"
             }
         ]
     }
