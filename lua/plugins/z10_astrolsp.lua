@@ -70,7 +70,7 @@ return {
           "node_modules",
           ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte"  },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte", "jsx", "tsx" },
       },
       --
       --
@@ -86,7 +86,7 @@ return {
           "node_modules",
           ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte", "jsx", "tsx" },
         -- Instead of having the init_options.includeLanguages/userLanguages, 
         -- add the includeLanguages under the settings.tailwindCSS.includeLanguages as the issue below suggests
         -- https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1002
@@ -133,7 +133,9 @@ return {
           "eelixir",
           "heex",
           "ex",
-          "svelte"
+          "svelte",
+          "jsx",
+          "tsx"
         },
       },
     },
