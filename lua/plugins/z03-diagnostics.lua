@@ -10,7 +10,12 @@ return {
         n = {
           gn = {
             function()
-              vim.keymap.set("n", "gn", vim.diagnostic.disable)
+              vim.keymap.set(
+                "n",
+                "gn",
+                function()
+                  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+                end)
             end,
             desc = "Disable vim diagnostic info",
           },
