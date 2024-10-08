@@ -33,7 +33,11 @@ return {
           "js",
           "ts",
           "jsx",
-          "tsx"
+          "tsx",
+          "javascript",
+          "typescript",
+          "javascriptreact",
+          "typescriptreact"
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
