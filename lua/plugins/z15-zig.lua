@@ -1,8 +1,10 @@
 -- https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#ccrust-via-lldb-vscode
 -- https://terminalprogrammer.com/neovim-setup-for-zig
 -- :lua print(vim.fn.getcwd())
--- sudo apt install lldb (for the command param)
 
+-- Install either package if lldb gets updated
+-- sudo apt install lldb 
+-- sudo apt install clangd
 
 
 local dap = require "dap"
@@ -15,7 +17,8 @@ end
 
 dap.adapters.lldb = {
   type = "executable",
-  command = "/usr/bin/lldb-vscode-16",
+  -- command = "/usr/bin/lldb-vscode-16",
+  command = "/usr/bin/lldb-dap-19",
   name = "lldb",
 }
 dap.configurations.zig = {
