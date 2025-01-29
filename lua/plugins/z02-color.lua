@@ -17,7 +17,7 @@ return {
           softtabstop = 4,
           -- colorcolumn = '80,120'
           colorcolumn = '120',
-          textwidth = 100,
+          -- textwidth = 100,
           wrap = true
         },
       },
