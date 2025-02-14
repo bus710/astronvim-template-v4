@@ -19,7 +19,7 @@
             },
             {
                 "language": "zig",
-                "path": "./zig-00-basic.json"
+                "path": "./zig-00-stdout.json"
             }
         ]
     }
