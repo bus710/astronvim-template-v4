@@ -16,6 +16,10 @@
             {
                 "language": "elixir",
                 "path": "./phx-json.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-00-basic.json"
             }
         ]
     }
