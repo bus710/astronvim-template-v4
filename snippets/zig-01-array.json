@@ -1,11 +1,11 @@
 {
     "setup":{
         "prefix": ["zig-01-array", "zig-array"],
-        "description": "Zig stdout code snippet",
+        "description": "Zig array code snippet",
         "body":[
-            "// Array literal",
+            "// Array literal - anonymous struct",
             "const ar0 = .{ 1, 2, 3, 4, 5 };",
-            "std.debug.print(\"ar0, {any}\\n\\n\", .{ar0});",
+            "std.debug.print(\"ar0: {any}\\n\\n\", .{ar0});",
             "",
             "// Array declaration",
             "const ar1 = [4]u8{ 0, 2, 4, 8 };",

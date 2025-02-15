@@ -24,6 +24,14 @@
             {
                 "language": "zig",
                 "path": "./zig-01-array.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-02-string.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-03-concat.json"
             }
         ]
     }

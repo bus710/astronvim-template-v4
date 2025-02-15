@@ -1,0 +1,21 @@
+{
+    "setup":{
+        "prefix": ["zig-02-string", "zig-string"],
+        "description": "Zig string code snippet",
+        "body":[
+            "const str0 = \"A literal value\";",
+            "std.debug.print(\"str0: {s}\\n\\n\", .{str0});",
+            "",
+            "const str1: []const u8 = \"A string object\";",
+            "std.debug.print(\"str1: {s}\\n\\n\", .{str1});",
+            "",
+            "std.debug.print(\"str1: \", .{});",
+            "for (str1) |c| {",
+            "    std.debug.print(\"{c}\", .{c});",
+            "}",
+            "",
+            "std.debug.print(\"\\n\\n\", .{});",
+            "std.debug.print(\"TypeOf str1: {any}\", .{@TypeOf(str1)});"
+        ]
+    }
+}
