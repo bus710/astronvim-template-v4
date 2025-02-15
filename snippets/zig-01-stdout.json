@@ -1,6 +1,6 @@
 {
     "setup":{
-        "prefix": ["zig-00-stdout", "zig-stdout"],
+        "prefix": [ "zig-01-stdout", "zig-stdout" ],
         "description": "Zig stdout code snippet",
         "body":[
             "const std = @import(\"std\");",

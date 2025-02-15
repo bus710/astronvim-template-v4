@@ -1,6 +1,6 @@
 {
     "setup":{
-        "prefix": ["zig-03-concat", "zig-concat"],
+        "prefix": ["zig-04-concat", "zig-concat"],
         "description": "Zig string concat code snippet",
         "body":[
             "// https://gencmurat.com/en/posts/zig-strings/",

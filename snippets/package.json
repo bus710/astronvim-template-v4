@@ -19,27 +19,31 @@
             },
             {
                 "language": "zig",
-                "path": "./zig-00-stdout.json"
+                "path": "./zig-01-stdout.json"
             },
             {
                 "language": "zig",
-                "path": "./zig-01-array.json"
+                "path": "./zig-02-array.json"
             },
             {
                 "language": "zig",
-                "path": "./zig-02-string.json"
+                "path": "./zig-03-string.json"
             },
             {
                 "language": "zig",
-                "path": "./zig-03-concat.json"
+                "path": "./zig-04-concat.json"
             },
             {
                 "language": "zig",
-                "path": "./zig-04-if-else.json"
+                "path": "./zig-05-if-else.json"
             },
             {
                 "language": "zig",
-                "path": "./zig-05-switch.json"
+                "path": "./zig-06-switch.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-07-for-loop.json"
             }
         ]
     }

@@ -1,6 +1,6 @@
 {
     "setup":{
-        "prefix": ["zig-04-if-else", "zig-if-else"],
+        "prefix": ["zig-05-if-else", "zig-if-else"],
         "description": "Zig if else code snippet",
         "body":[
             "const x = 5;",

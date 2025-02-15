@@ -1,6 +1,6 @@
 {
     "setup":{
-        "prefix": ["zig-02-string", "zig-string"],
+        "prefix": ["zig-03-string", "zig-string"],
         "description": "Zig string code snippet",
         "body":[
             "const str0 = \"A literal value\";",

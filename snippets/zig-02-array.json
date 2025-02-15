@@ -1,6 +1,6 @@
 {
     "setup":{
-        "prefix": ["zig-01-array", "zig-array"],
+        "prefix": ["zig-02-array", "zig-array"],
         "description": "Zig array code snippet",
         "body":[
             "// Array literal - anonymous struct",
