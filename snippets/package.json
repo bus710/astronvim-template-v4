@@ -36,6 +36,10 @@
             {
                 "language": "zig",
                 "path": "./zig-04-if-else.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-05-switch.json"
             }
         ]
     }

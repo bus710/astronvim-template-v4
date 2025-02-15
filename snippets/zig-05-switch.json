@@ -1,0 +1,20 @@
+{
+    "setup":{
+        "prefix": ["zig-05-switch", "zig-switch"],
+        "description": "Zig switch code snippet",
+        "body":[
+            "const Role = enum {",
+            "    Admin,",
+            "    User,",
+            "    Guest,",
+            "};",
+            "",
+            "const role = Role.Admin;",
+            "switch (role) {",
+            "    Role.Admin => std.debug.print(\"Admin\\n\", .{}),",
+            "    Role.User => std.debug.print(\"User\\n\", .{}),",
+            "    Role.Guest => std.debug.print(\"Guest\\n\", .{}),",
+            "}"
+        ]
+    }
+}
