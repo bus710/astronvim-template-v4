@@ -1,8 +1,10 @@
 {
     "setup":{
         "prefix": ["zig-03-concat", "zig-concat"],
-        "description": "Zig string code snippet",
+        "description": "Zig string concat code snippet",
         "body":[
+            "// https://gencmurat.com/en/posts/zig-strings/",
+            "",
             "// Comptime concat",
             "const s0 = \"Hello\";",
             "const s1 = \"World\";",

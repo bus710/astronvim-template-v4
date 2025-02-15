@@ -32,6 +32,10 @@
             {
                 "language": "zig",
                 "path": "./zig-03-concat.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-04-if-else.json"
             }
         ]
     }
