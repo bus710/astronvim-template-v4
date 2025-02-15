@@ -20,6 +20,10 @@
             {
                 "language": "zig",
                 "path": "./zig-00-stdout.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-01-array.json"
             }
         ]
     }

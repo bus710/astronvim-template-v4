@@ -1,7 +1,7 @@
 {
     "setup":{
-        "prefix": ["zig-basic", "zig-00-basic"],
-        "description": "Zig basic code snippet",
+        "prefix": ["zig-00-stdout", "zig-stdout"],
+        "description": "Zig stdout code snippet",
         "body":[
             "const std = @import(\"std\");",
             "",
