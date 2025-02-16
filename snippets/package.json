@@ -48,6 +48,22 @@
             {
                 "language": "zig",
                 "path": "./zig-08-while-loop.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-09-struct.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-10-anonymous-struct.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-11-type-casting.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-12-gpa.json"
             }
         ]
     }
