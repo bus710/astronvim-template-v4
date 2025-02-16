@@ -13,6 +13,13 @@
             "   std.debug.print(\"pointer: {}\\n\", .{pointer.*});",
             "   pointer = &c1;",
             "   std.debug.print(\"pointer: {}\\n\", .{pointer.*});",
+            "",
+            "   // Point arithmetic",
+            "   const ar = [_]i32{ 1, 2, 3, 4, 5 };",
+            "   var p: [*]const i32 = &ar;",
+            "   std.debug.print(\"p: {any}\\n\", .{p[0]});",
+            "   p += 1;",
+            "   std.debug.print(\"p: {any}\\n\", .{p[0]});",
             "}"
         ]
     }

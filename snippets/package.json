@@ -80,6 +80,10 @@
             {
                 "language": "zig",
                 "path": "./zig-30-pointer.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-35-optional.json"
             }
         ]
     }

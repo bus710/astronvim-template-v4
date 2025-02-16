@@ -1,0 +1,12 @@
+{
+    "setup":{
+        "prefix": ["zig-35-optional"],
+        "description": "Zig optional code snippet",
+        "body":[
+            "const std = @import(\"std\");",
+            "",
+            "pub fn main() !void {",
+            "}"
+        ]
+    }
+}
