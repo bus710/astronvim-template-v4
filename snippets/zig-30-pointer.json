@@ -1,0 +1,19 @@
+{
+    "setup":{
+        "prefix": ["zig-30-pointer"],
+        "description": "Zig pointer code snippet",
+        "body":[
+            "const std = @import(\"std\");",
+            "",
+            "pub fn main() !void {",
+            "   const c0: u8 = 5;",
+            "   const c1: u8 = 6;",
+            "",
+            "   var pointer = &c0;",
+            "   std.debug.print(\"pointer: {}\\n\", .{pointer.*});",
+            "   pointer = &c1;",
+            "   std.debug.print(\"pointer: {}\\n\", .{pointer.*});",
+            "}"
+        ]
+    }
+}

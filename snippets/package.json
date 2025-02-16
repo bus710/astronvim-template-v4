@@ -64,6 +64,22 @@
             {
                 "language": "zig",
                 "path": "./zig-12-gpa.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-13-page.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-14-fixed.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-15-arena.json"
+            },
+            {
+                "language": "zig",
+                "path": "./zig-30-pointer.json"
             }
         ]
     }
