@@ -15,7 +15,25 @@
             "}",
             "",
             "std.debug.print(\"\\n\\n\", .{});",
-            "std.debug.print(\"TypeOf str1: {any}\", .{@TypeOf(str1)});"
+            "std.debug.print(\"TypeOf str1: {any}\", .{@TypeOf(str1)});",
+            "",
+            "// How to declare a string of 16 bytes?",
+            "var s0: [16]u8 = undefined;",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});",
+            "std.debug.print(\"s0 type: {any}\\n\", .{@TypeOf(s0)});",
+            "// How to initialize a string of 16 bytes?",
+            "const p0 = &s0;",
+            "@memset(p0, 0);",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});",
+            "// How to set the first byte to 'a'?",
+            "s0[0] = 'a';",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});",
+            "// How to set the first byte to 0?",
+            "@memset(&s0, 0);",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});",
+            "// How to assign a smaller string to a larger array?",
+            "@memcpy(s0[0..\"abc\".len], \"abc\");",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});"
         ]
     }
 }
