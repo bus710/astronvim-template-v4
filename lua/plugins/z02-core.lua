@@ -1,4 +1,6 @@
 -- https://www.reddit.com/r/AstroNvim/comments/1bu8dx6/astronvim_v4_single_file_conf/
+--
+if true then return {} end 
 
 return {
   { 'Mofiqul/dracula.nvim' },
