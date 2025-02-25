@@ -1,11 +1,9 @@
 {
     "setup":{
-        "prefix": ["zig-12-gpa", "zig-gpa"],
+        "prefix": ["zig-gpa"],
         "description": "Zig gpa code snippet",
         "body":[
-            "const std = @import(\"std\");",
-            "",
-            "pub fn main() !void {",
+            "pub fn example() !void {",
             "    var gpa = std.heap.GeneralPurposeAllocator(.{}){};",
             "    const allocator = gpa.allocator();",
             "",

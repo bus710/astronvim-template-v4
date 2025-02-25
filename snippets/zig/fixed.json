@@ -1,11 +1,9 @@
 {
     "setup":{
-        "prefix": ["zig-14-fixed"],
+        "prefix": ["zig-fixed"],
         "description": "Zig fixed buffer allocator code snippet",
         "body":[
-            "const std = @import(\"std\");",
-            "",
-            "pub fn main() !void {",
+            "pub fn example() !void {",
             "   var buffer: [1000]u8 = undefined;",
             "   var fba = std.heap.FixedBufferAllocator.init(&buffer);",
             "   const allocator = fba.allocator();",

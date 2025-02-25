@@ -6,84 +6,20 @@
     "contributes": {
         "snippets": [
             {
-                "language": "elixir",
-                "path": "./phx-liveview.json"
-            },
-            {
-                "language": "elixir",
-                "path": "./phx-controller.json"
-            },
-            {
-                "language": "elixir",
-                "path": "./phx-json.json"
+                "language": "zig",
+                "path": "./zig/gpa.json"
             },
             {
                 "language": "zig",
-                "path": "./zig-01-stdout.json"
+                "path": "./zig/page.json"
             },
             {
                 "language": "zig",
-                "path": "./zig-02-array.json"
+                "path": "./zig/fixed.json"
             },
             {
                 "language": "zig",
-                "path": "./zig-03-string.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-04-concat.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-05-if-else.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-06-switch.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-07-for-loop.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-08-while-loop.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-09-struct.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-10-anonymous-struct.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-11-type-casting.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-12-gpa.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-13-page.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-14-fixed.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-15-arena.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-30-pointer.json"
-            },
-            {
-                "language": "zig",
-                "path": "./zig-35-optional.json"
+                "path": "./zig/arena.json"
             }
         ]
     }

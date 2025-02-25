@@ -1,11 +1,9 @@
 {
     "setup":{
-        "prefix": ["zig-15-arena"],
+        "prefix": ["zig-arena"],
         "description": "Zig arena allocator code snippet",
         "body":[
-            "const std = @import(\"std\");",
-            "",
-            "pub fn main() !void {",
+            "pub fn example() !void {",
             "   var arena = std.heap.ArenaAllocator.init(std.heap.page_allocator);",
             "   defer arena.deinit();",
             "   const allocator = arena.allocator();",

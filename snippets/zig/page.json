@@ -1,11 +1,9 @@
 {
     "setup":{
-        "prefix": ["zig-13-page"],
+        "prefix": ["zig-page"],
         "description": "Zig page code snippet",
         "body":[
-            "const std = @import(\"std\");",
-            "",
-            "pub fn main() !void {",
+            "pub fn example() !void {",
             "    const allocator = std.heap.page_allocator;",
             "    const memory = try allocator.alloc(u8, 1024);",
             "    defer allocator.free(memory);",
