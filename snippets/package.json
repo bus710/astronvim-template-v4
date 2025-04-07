@@ -20,7 +20,12 @@
             {
                 "language": "zig",
                 "path": "./zig/arena.json"
+            },
+            {
+                "language": "c",
+                "path": "./kernel/module.json"
             }
+
         ]
     }
 }
