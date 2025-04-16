@@ -14,6 +14,7 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.gleam" },
   { import = "astrocommunity.pack.bash" },
   --
   -- { import = "astrocommunity.pack.elixir-phoenix" },

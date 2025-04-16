@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- This function will run when open an elixir file.
 
@@ -18,38 +18,39 @@ if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 -- For each project, create the .vscode/launch.json file 
 -- ... with the get-elixir-vscode-launch-json alias command
 
-local dap = require "dap"
-local dapui = require "dapui"
--- local lsp_path= "/home/bus710/.erlang_ls/bin/erlang_ls"
-local lsp_path= "/home/bus710/.local/share/nvim/mason/bin/erlang_ls"
 
-dap.adapters.erlang_ls= {
-  type = "executable",
-  command = lsp_path,
-  args = {}
-}
-dap.configurations.erlang= {
-  {
-    name = "erlang_ls",
-    type = "erlang_ls",
-    task = "run",
-    request = "launch",
-    projectDir = "${workspaceFolder}",
-    -- requireFiles = {
-    --   "test/**/test_helper.exs",
-    --   "test/**/*_test.exs"
-    -- }
-    -- taskArgs = {"--trace"},
-    -- startApps = true, -- for Phoenix projects
-    -- exitAfterTaskReturns = false,
-    -- debugAutoInterpretAllModules = false,
-  },
-}
-
-dap.listeners.after.event_initialized["dapui_config"] = function() dapui.open {} end
-dap.listeners.before.event_terminated["dapui_config"] = function() dapui.close {} end
-dap.listeners.before.event_exited["dapui_config"] = function() dapui.close {} end
-
+-- local dap = require "dap"
+-- local dapui = require "dapui"
+-- -- local lsp_path= "/home/bus710/.erlang_ls/bin/erlang_ls"
+-- local lsp_path= "/home/bus710/.local/share/nvim/mason/bin/erlang_ls"
+--
+-- dap.adapters.erlang_ls= {
+--   type = "executable",
+--   command = lsp_path,
+--   args = {}
+-- }
+-- dap.configurations.gleam= {
+--   {
+--     name = "erlang_ls",
+--     type = "erlang_ls",
+--     task = "run",
+--     request = "launch",
+--     projectDir = "${workspaceFolder}",
+--     -- requireFiles = {
+--     --   "test/**/test_helper.exs",
+--     --   "test/**/*_test.exs"
+--     -- }
+--     -- taskArgs = {"--trace"},
+--     -- startApps = true, -- for Phoenix projects
+--     -- exitAfterTaskReturns = false,
+--     -- debugAutoInterpretAllModules = false,
+--   },
+-- }
+--
+-- dap.listeners.after.event_initialized["dapui_config"] = function() dapui.open {} end
+-- dap.listeners.before.event_terminated["dapui_config"] = function() dapui.close {} end
+-- dap.listeners.before.event_exited["dapui_config"] = function() dapui.close {} end
+--
 return {}
 
 
