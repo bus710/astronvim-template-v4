@@ -1,5 +1,12 @@
 -- In progress...
 
+-- Until there is a new DAP debugger coming out, use the erl.
+-- gleam shell
+-- > os:cmd("gleam build").
+-- > c(hello).
+-- > hello:main().
+--
+-- > os:cmd("gleam build"), c(hello), hello:main().
 
 
 -- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
